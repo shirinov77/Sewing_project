@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Development 2023 - PDP Online</title>
+    <link rel="stylesheet" href="kurs.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PDP <span>Online</span></div>
+        <nav>
+            <a href="#">Kurslarimiz</a>
+            <a href="#">Qo'llanma</a>
+        </nav>
+        <div class="auth">Kirish</div>
+    </header>
+
+    <main class="main-content">
+        <section class="course-hero">
+            <h1>JAVA<br>DEVELOPMENT<br>2023</h1>
+            <button class="register-btn">Kursni sotib olish</button>
+            <div class="course-features">
+                <div class="feature">
+                    <img src="https://via.placeholder.com/50" alt="Davomiyli">
+                    <p>Davomiyli<br>5 modul</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/50" alt="Online">
+                    <p>Online<br>Uzga qulay vaqtda</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/50" alt="Intensiv">
+                    <p>Intensiv<br>Amaliy mashq'lotlar</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/50" alt="Benefit">
+                    <p>Bir yil<br>Kursdan foydalanish imkoni</p>
+                </div>
+            </div>
+            <div class="video-preview">🎥</div>
+            <div class="instructor">
+                <img src="https://via.placeholder.com/100" alt="Instructor">
+            </div>
+        </section>
+
+        <section class="course-details">
+            <h2>KURSIMIZ KIMLARG'A TO'G'RI KELADI</h2>
+            <div class="target-audience">
+                <div class="audience-item">
+                    <img src="https://via.placeholder.com/50" alt="Beginner">
+                    <p>0 dan boshlamoqchi bo'lganlarga<br>Dasturlash sohasi bo'yicha hech qanday bilimga ega bo'magan har qanday inson bilimga ega bo'lishni o'rganishini osonlashtiradi</p>
+                </div>
+                <div class="audience-item">
+                    <img src="https://via.placeholder.com/50" alt="Intermediate">
+                    <p>Boshlang'ich bilimga ega bo'lganlarga<br>Bu kurs bo'yicha boshlang'ich bilimga ega bo'lgan bo'lak dasturchilar o'z bilmarini mustahkamlashtirish orqali yuqori bosqichga o'tish imkoniyatiga ega</p>
+                </div>
+            </div>
+
+            <h2>NIMALARNI O'RGANASIZ</h2>
+            <div class="curriculum-topics">
+                <div class="topic-item">
+                    <p>Java dasturlash tiling boshlang'ich tushunchalari bilish</p>
+                    <p>Javada connectionlar bilan ishlash olish</p>
+                    <p>Javada Telegram botni realzatsiya qila olish</p>
+                </div>
+                <div class="topic-item">
+                    <p>Obyektga yo'naltirilgan dasturlash tamoyillarini bilish</p>
+                    <p>JSON text format va GSON kutubxonasidan foydalana olish</p>
+                </div>
+                <div class="topic-item">
+                    <p>Javada kolleksiyalar bilan ishlash (Collections)</p>
+                    <p>Javada API lar bilan ishlash olish</p>
+                </div>
+            </div>
+
+            <h2>KURS DASTURI</h2>
+            <div class="curriculum">
+                <div class="module">
+                    <div class="module-header" onclick="toggleModule(1)">
+                        <span class="module-number">1</span>
+                        <span class="module-title">Java installation and programming environment setup</span>
+                        <span class="close-btn">×</span>
+                    </div>
+                    <div class="module-content" id="module1-content">
+                        <ul>
+                            <li>1.1 Introduction to Java</li>
+                            <li>1.2 Java Platform</li>
+                            <li>1.3 Compiler and Interpreter</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-header" onclick="toggleModule(2)">
+                        <span class="module-number">2</span>
+                        <span class="module-title">Token, Data types and Variables, Unicode</span>
+                        <span class="close-btn">×</span>
+                    </div>
+                    <div class="module-content" id="module2-content">
+                        <ul>
+                            <li>2.1 Token</li>
+                            <li>2.2 Data Types</li>
+                            <li>2.3 Variables</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-header" onclick="toggleModule(3)">
+                        <span class="module-number">3</span>
+                        <span class="module-title">Java operators</span>
+                        <span class="close-btn">×</span>
+                    </div>
+                    <div class="module-content" id="module3-content">
+                        <ul>
+                            <li>3.1 Arithmetic Operators</li>
+                            <li>3.2 Relational Operators</li>
+                            <li>3.3 Logical Operators</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-header" onclick="toggleModule(4)">
+                        <span class="module-number">4</span>
+                        <span class="module-title">Control Flow Statements: Decision Making Statements</span>
+                        <span class="close-btn">×</span>
+                    </div>
+                    <div class="module-content" id="module4-content">
+                        <ul>
+                            <li>4.1 If Statement</li>
+                            <li>4.2 Switch Case</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="module">
+                    <div class="module-header" onclick="toggleModule(5)">
+                        <span class="module-number">5</span>
+                        <span class="module-title">Function and Method</span>
+                        <span class="close-btn">×</span>
+                    </div>
+                    <div class="module-content" id="module5-content">
+                        <ul>
+                            <li>5.1 Function Basics</li>
+                            <li>5.2 Method Overloading</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://online.pdp.uz/assets/newPdp/icons/logo-white.svg" alt="PDP Online Logo">
+                        <span>PDP <strong>Online</strong></span>
+                    </div>
+                    <p>O'zbekistondagi eng yirik professional dasturlash kurslari platformasi</p>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Kurslar</h3>
+                    <ul>
+                        <li><a href="#">Frontend Dasturlash</a></li>
+                        <li><a href="#">Backend Dasturlash</a></li>
+                        <li><a href="#">Mobile Dasturlash</a></li>
+                        <li><a href="#">Ma'lumotlar Tahlili</a></li>
+                        <li><a href="#">Sun'iy Intellekt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Kompaniya</h3>
+                    <ul>
+                        <li><a href="#">Biz Haqimizda</a></li>
+                        <li><a href="#">Mentorlar</a></li>
+                        <li><a href="#">Bitiruvchilar</a></li>
+                        <li><a href="#">Hamkorlar</a></li>
+                        <li><a href="#">Vakansiyalar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Yordam</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Qo'llanma</a></li>
+                        <li><a href="#">Aloqa</a></li>
+                        <li><a href="#">Shartlar va Qoidalar</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Aloqa</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Toshkent shahar, Yunusobod tumani</li>
+                        <li><i class="fas fa-phone-alt"></i> +998 71 200 70 07</li>
+                        <li><i class="fas fa-envelope"></i> info@pdp.uz</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 PDP Online. Barcha huquqlar himoyalangan.
+                </div>
+
+                <div class="payment-methods">
+                    <img src="https://online.pdp.uz/assets/newPdp/payment-methods/humo.svg" alt="Humo">
+                    <img src="https://online.pdp.uz/assets/newPdp/payment-methods/uzcard.svg" alt="Uzcard">
+                    <img src="https://online.pdp.uz/assets/newPdp/payment-methods/visa.svg" alt="Visa">
+                    <img src="https://online.pdp.uz/assets/newPdp/payment-methods/mastercard.svg" alt="Mastercard">
+                    <img src="https://online.pdp.uz/assets/newPdp/payment-methods/payme.svg" alt="Payme">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
